@@ -1,0 +1,82 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 767px) {
+  
+
+    .cart {
+        padding-top: 39px;
+        padding-bottom: 128px;
+        gap: 96px;
+        &__cards {
+            gap: 32px;
+          }
+          &__functional {
+            flex-direction: column;
+            gap: 48px;
+          }
+    }
+
+    .cart-product {
+        padding-right: 12px;
+        gap: 17px;
+    
+    &__left {
+        width: 144px;
+        height: 188px;
+      }
+      &__right {
+        gap: 32px;
+        padding-top: 14px;
+    }
+
+      &__text {
+        gap: 26px;
+        width: 144px;
+        }
+      &__list {
+        gap: 4px;
+      }
+      &__heading {
+        font-size: 16px;
+        line-height: 19px;
+      }
+      &__desc {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      &__input {
+        width: 24px;
+        height: 15px;
+        font-size: 10px;
+        line-height: 12px;
+      }
+      &__cross svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    .cart-form {
+      &__input {
+        width: 360px;
+      }
+    }
+
+    .cart-buttons {
+        margin-top: 0;
+        justify-content: space-between;
+        gap: 0;
+        
+        &__btn {
+            font-family: "Lato", sans-serif;
+            padding: 9px 18px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            
+    }
+}
+
+
+
+}

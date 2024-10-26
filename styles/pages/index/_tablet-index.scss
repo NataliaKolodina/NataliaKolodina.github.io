@@ -1,0 +1,36 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 1024px) {
+  .main-top {
+    width: 100vw;
+    flex-wrap: nowrap;
+    &__title {
+      font-size: 44px;
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+    & img {
+      max-width: 384px;
+    }
+  }
+
+  .main-promo {
+    grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .main-content {
+    margin-top: 110px;
+    &__text {
+      gap: 3px;
+      margin-bottom: 73px;
+    }
+    &__button {
+      margin-top: 33px;
+      margin-bottom: 71px;
+    }
+  }
+}

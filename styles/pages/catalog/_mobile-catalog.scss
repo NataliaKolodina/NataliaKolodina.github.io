@@ -1,0 +1,33 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+
+@media (max-width: 767px) {
+    .catalog-content {
+        position: relative;
+    }
+    .filter {
+        position: absolute;
+        z-index: 10;
+        width: 250px;
+        padding-left: 0;
+        &__heading {
+            display: none;
+        }
+        &__svg {
+            width: 38px;
+            height: 25px;
+        }
+    }
+
+    .sort {
+        position: absolute;
+        right: 0;
+        gap: 24px;
+        &__heading {
+            font-size: 12px;
+            line-height: 14px;
+          }
+          
+    }
+}

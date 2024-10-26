@@ -1,0 +1,35 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 1024px) {
+  .reg {
+    padding-top: 40px;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .reg-describe {
+    
+    &__list {
+      gap: 16px;
+    }
+
+    &__heading {      
+      margin-bottom: 11px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__text {
+      max-width: 354px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__item {
+      font-size: 16px;
+      line-height: 19px;
+      &_br {
+        padding-left: 34px;
+      }
+    }
+  }
+}

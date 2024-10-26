@@ -1,0 +1,50 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 767px) {
+  .main-top {
+    grid-template-columns: none;
+    padding-top: 148px;
+    padding-bottom: 149px;
+    &__brand {
+      padding-left: 15px;
+    }
+    &__title {
+      font-size: 38px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+
+  .main-promo {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item1 {
+      height: 248px;
+    }
+    &__item2 {
+      height: 248px;
+    }
+    &__item3 {
+      height: 248px;
+    }
+    &__item4 {
+      height: 111px;
+    }
+  }
+
+  .main-content {
+    margin-top: 64px;
+
+    &__text {
+      margin-bottom: 65px;
+    }
+    &__button {
+      margin-top: 41px;
+      margin-bottom: 85px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../helpers/vars";
+@import "../helpers/extends";
+
+.footer {
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__background {
+    background: $colorBlack;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorWhite;
+  }
+
+  &__logos {
+    display: flex;
+    gap: 7px;
+  }
+
+  &__logo {
+    width: 31px;
+    height: 32px;
+    background: $colorWhite;
+    @include center();
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $colorSite;
+    }
+
+    &:hover * {
+      fill: $colorWhite;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 43px;
+    padding-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}

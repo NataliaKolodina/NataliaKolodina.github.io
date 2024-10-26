@@ -1,0 +1,126 @@
+@import "../helpers/vars";
+@import "../helpers/extends";
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__background {
+    background: $colorBlack;
+  }
+
+  &__left {
+    margin-top: 18px;
+    margin-bottom: 19px;
+    @include center();
+    align-items: baseline;
+    gap: 41px;
+  }
+
+  &__right {
+    margin-top: 26px;
+    margin-bottom: 20px;
+    @include center();
+    align-items: flex-start;
+    gap: 33px;
+    position: relative;
+  }
+
+  &__basket {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    padding: 4px;
+    width: 19px;
+    height: 19px;
+    @include center();
+    align-items: center;
+    background-color: $colorSite;
+    border-radius: 50%;
+
+    &_text {
+      font-weight: 400;
+      font-size: 12px;
+      color: $colorWhite;
+    }
+  }
+}
+
+.box__header-menu {
+  overflow: hidden;
+}
+
+#check {
+  position: absolute;
+  left: -9999999999px;
+  visibility: hidden;
+}
+
+#check:checked ~ .header-menu {
+  right: 0;
+}
+
+.header-menu {
+  position: absolute;
+  z-index: 10;
+  top: 58px;
+  right: -999px;
+  transition: right 0.8s;
+  width: 232px;
+  background-color: $colorWhite;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  padding: 32px;
+  box-sizing: border-box;
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__title {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorBlack;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorSite;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-left: 21px;
+    list-style-type: none;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+
+    &:hover {
+      color: $colorSite;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__right {
+    margin-top: 19px;
+    margin-bottom: 18px;
+    gap: 25px;
+  }
+}

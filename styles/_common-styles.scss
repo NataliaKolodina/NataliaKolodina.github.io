@@ -1,0 +1,95 @@
+@import "./helpers/vars";
+@import "./helpers/extends";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.button__style {
+  border: 1px solid $colorSite;
+  padding: 15px 39px;
+  font-weight: 400;
+  font-size: 16px;
+  color: $colorSite;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.button__style:hover {
+  @extend %buttonHover;
+}
+
+.button__style:active {
+  background-color: $colorSite;
+  color: $colorWhite;
+}
+
+// убирает стрелки в input[type=number]
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.span__color_site {
+  color: $colorSite;
+}
+
+.colorSite-svg path {
+  fill: $colorSite;
+}
+
+.container {
+  max-width: $widthSite;
+  margin: 0 auto;
+
+  &__main-top {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 736px;
+    &__main-top {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 359px;
+  }
+
+  .hidden__item {
+    display: none;
+  }
+}

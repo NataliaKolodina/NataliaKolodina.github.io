@@ -1,0 +1,18 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 767px) {
+  .reg {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .reg-form {
+    &__input {
+      width: 358px;
+    }
+    &__desc {
+      max-width: 358px;
+    }
+  }
+}

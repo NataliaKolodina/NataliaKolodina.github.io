@@ -1,0 +1,63 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 767px) {
+  .product-banner {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    
+  
+  &__img {
+    position: relative;
+    width: 374px;
+height: 454px;
+  }
+  &__button {
+    position: absolute;
+    z-index: 10;
+    &_1 {
+        left: 0;
+    }
+    &_2 {
+        right: 0;
+    }
+  }
+ 
+  }
+
+.product-text {
+    &__title {
+        margin-bottom: 32px;
+      }
+    &__desc {
+        max-width: 326px;
+        line-height: 143%;
+        margin-bottom: 32px;
+      }
+      &__price {
+        line-height: 130%;
+      }
+      &__greyline {
+        margin: 32px 0 49px 0;
+        width: 175px;
+      }
+      &__filter {
+        gap: 10px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 64px;
+        
+      }
+    }
+
+    .product-content {
+        padding: 64px 0;
+      }
+
+      .content__card_hidden {
+        display: block;
+      }
+      
+
+
+}

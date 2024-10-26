@@ -1,0 +1,152 @@
+@import "../helpers/vars";
+@import "../helpers/extends";
+
+.content {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+    gap: $gapDesktop;
+  }
+
+  &__card:hover .box__layer {
+    display: flex;
+  }
+
+  &__card1 {
+    background-image: url(../../img/box1.png);
+    @extend %cardSize;
+  }
+
+  &__card2 {
+    background-image: url(../../img/box2.png);
+    @extend %cardSize;
+  }
+
+  &__card3 {
+    background-image: url(../../img/box3.png);
+    @extend %cardSize;
+  }
+
+  &__card4 {
+    background-image: url(../../img/box4.png);
+    @extend %cardSize;
+  }
+
+  &__card5 {
+    background-image: url(../../img/box5.png);
+    @extend %cardSize;
+  }
+
+  &__card6 {
+    background-image: url(../../img/box6.png);
+    @extend %cardSize;
+  }
+
+  &__card7 {
+    background-image: url(../../img/box7.png);
+    @extend %cardSize;
+  }
+
+  &__card8 {
+    background-image: url(../../img/box8.png);
+    @extend %cardSize;
+  }
+
+  &__card9 {
+    background-image: url(../../img/box9.png);
+    @extend %cardSize;
+  }
+
+  &__card10 {
+    background-image: url(../../img/box10.png);
+    @extend %cardSize;
+  }
+
+  &__card11 {
+    background-image: url(../../img/box11.png);
+    @extend %cardSize;
+  }
+
+  &__card12 {
+    background-image: url(../../img/box12.png);
+    @extend %cardSize;
+  }
+}
+
+.card {
+  &__text {
+    padding: 24px 16px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 13px;
+    color: $colorBlack;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 14px;
+    color: #5d5d5d;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorSite;
+  }
+}
+
+.box__layer {
+  background-color: rgba(58, 56, 56, 0.86);
+  width: 100%;
+  height: 100%;
+  @include center();
+  align-items: center;
+
+  &_unvisitable {
+    display: none;
+  }
+
+  &_btn {
+    border: 1px solid $colorWhite;
+    background: transparent;
+    cursor: pointer;
+    @include center();
+    align-items: center;
+    gap: 11px;
+    padding: 10px 16px;
+    color: $colorWhite;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+      @extend %buttonHover;
+    }
+
+    &:active {
+      background-color: $colorWhite;
+      color: #3b3333;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .content__box {
+    gap: 16px;
+  }
+  .content__card_hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+.content__box {
+  grid-template-columns: repeat(auto-fit, 357px);
+}
+}

@@ -1,0 +1,59 @@
+@import "../helpers/vars";
+@import "../helpers/extends";
+
+.advantage {
+  padding: 104px 0;
+  gap: $gapDesktop;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__background {
+    background: $colorBlack;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 19px;
+    color: $colorWhite;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    color: $colorWhite;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantage {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantage {
+    padding-bottom: 81px;
+    gap: 47px;
+    &__title {
+      margin-top: 27px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      max-width: 348px;
+    }
+  }
+}

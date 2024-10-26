@@ -1,0 +1,21 @@
+%promoItemBg {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 360 / 260;
+}
+
+%cardSize {
+  width: 360px;
+  height: 420px;
+}
+
+@mixin center(){
+  display: flex;
+  justify-content: center;
+}
+
+%buttonHover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}

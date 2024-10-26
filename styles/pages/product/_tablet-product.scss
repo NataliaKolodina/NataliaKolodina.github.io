@@ -1,0 +1,16 @@
+@import "../../helpers/vars";
+@import "../../helpers/extends";
+
+@media (max-width: 1024px) {
+  .product-banner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .product-text {
+    max-width: 100%;
+    margin-top: 0;
+    border-left: none;
+    border-right: none;
+  }
+}

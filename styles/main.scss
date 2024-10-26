@@ -1,0 +1,17 @@
+// // общие стили для всех страниц
+@import "./common-styles";
+
+// общие блоки
+@import "./blocks/header";
+@import "./blocks/top-breadcrumbs";
+@import "./blocks/content";
+@import "./blocks/advantage";
+@import "./blocks/subscribe";
+@import "./blocks/footer";
+
+// страницы
+@import "./pages/index/index";
+@import "./pages/product/product";
+@import "./pages/catalog/catalog";
+@import "./pages/cart/cart";
+@import "./pages/registration/registration";
