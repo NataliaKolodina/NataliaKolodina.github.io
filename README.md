@@ -54,8 +54,7 @@ Check out the live site here:
 ## How to Run Locally
 
 1. Clone the repository:  
-```bash
-git clone https://github.com/NataliaKolodina/your-repo-name.git```
+```git clone https://github.com/NataliaKolodina/your-repo-name.git```
 2. Open the project folder in your favorite code editor (e.g., Visual Studio Code).
 3. Open the index.html file in your browser to view the site locally.
 
