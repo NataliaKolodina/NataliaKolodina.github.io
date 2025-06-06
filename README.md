@@ -59,6 +59,8 @@ git clone https://github.com/NataliaKolodina/your-repo-name.git
 2. Open the project folder in your favorite code editor (e.g., Visual Studio Code).
 3. Open the index.html file in your browser to view the site locally.
 
+---
+
 ## 𝗪𝗵𝗮𝘁 𝗜 𝗟𝗲𝗮𝗿𝗻𝗲𝗱
 
 - Writing semantic HTML improves accessibility and SEO
@@ -67,12 +69,16 @@ git clone https://github.com/NataliaKolodina/your-repo-name.git
 - Effective use of Git & GitHub for source control and project deployment
 - Converting Figma UI designs to functional, responsive web layouts
 
+---
+
 ## 𝐀𝐛𝐨𝐮𝐭 𝐭𝐡𝐞 𝐀𝐮𝐭𝐡𝐨𝐫
 
 Nataliia Kolodina
 Frontend Developer specializing in React with practical experience building interactive and user-friendly web applications focused on health and wellbeing.
 GitHub: [https://github.com/NataliaKolodin](https://github.com/NataliaKolodina)a
 LinkedIn: [https://www.linkedin.com/in/nataliia-kolodina](https://www.linkedin.com/in/nataliia-kolodina/)
+
+---
 
 ## 𝗟𝗶𝗰𝗲𝗻𝘀𝗲
 
