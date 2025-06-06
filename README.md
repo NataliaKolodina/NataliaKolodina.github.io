@@ -1,5 +1,6 @@
 # Multi-Page Clothing Market Website
 
+A responsive multi-page e-commerce website for a clothing store, designed to showcase products, provide detailed information, and enable user subscriptions. The project aims to simulate a real online shop experience and improve front-end development skills.
 
 ## Overview
 
