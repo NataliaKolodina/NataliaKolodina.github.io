@@ -2,6 +2,15 @@
 
 A responsive multi-page e-commerce website for a clothing store, designed to showcase products, provide detailed information, and enable user subscriptions. The project aims to simulate a real online shop experience and improve front-end development skills.
 
+---
+
+## Demo
+
+Check out the live site here:  
+[Live Demo](https://nataliakolodina.github.io/)
+
+---
+
 ## Overview
 
 This is a fully responsive **multi-page website** for an online clothing store, developed as a personal project. The site includes a homepage, product catalog, item detail pages, and a subscription form. It is built using semantic HTML and modern styling techniques (SCSS) to ensure accessibility, maintainability, and responsiveness.
@@ -41,13 +50,6 @@ To build a realistic e-commerce website layout and enhance skills in:
 - Git & GitHub  
 - Visual Studio Code  
 - Figma (for UI design reference)
-
----
-
-## Demo
-
-Check out the live site here:  
-[Live Demo](https://nataliakolodina.github.io/)
 
 ---
 
